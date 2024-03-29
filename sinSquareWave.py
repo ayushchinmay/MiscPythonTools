@@ -5,7 +5,7 @@ import numpy as np
 
 # Signal Configuration
 num_points = 100000
-num_frames = 100
+num_frames = 15
 min_x = -np.pi/2
 max_x = np.pi/2
 
@@ -22,7 +22,7 @@ ax.set_xlabel('Time')
 ax.set_ylabel('Amplitude')
 ax.set_xlim((min_x, max_x))
 ax.set_ylim(-1, 1)
-ax.xaxis.set_major_formatter(tck.FormatStrFormatter('%g $\pi$'))
+ax.xaxis.set_major_formatter(tck.FormatStrFormatter(r'%g $\pi$'))
 ax.xaxis.set_major_locator(tck.MultipleLocator(base=0.5))
 ax.grid(True, linestyle='--', linewidth=0.75, color='#cbcbcb')
 # Plot the signals
@@ -47,4 +47,10 @@ def update(frame):
     return (line, line_s)
     
 ani = animation.FuncAnimation(fig, update, frames=range(num_frames), interval=250, repeat=False)
+
+# Save the animation
+PATH = "E:/AYUSH Documents/MSU/12_SPRING 2024/ECE 407/Lab4/"
+writer = animation.PillowWriter(fps=4, metadata=dict(artist='Ayush Chinmay'), bitrate=1800)
+ani.save(PATH + 'sineWaveSum.gif', writer=writer)
+
 plt.show()
