@@ -1,6 +1,6 @@
 ## Quick Python Tools
 ### 1. [ColorGradient](https://github.com/ayushchinmay/MiscPythonTools/blob/main/ColorGradient/colorGrad.py)
-- <img src="https://github.com/ayushchinmay/MiscPythonTools/blob/main/readme_img/colorGrad_ex1.png" width="640">
+- <img src="https://github.com/ayushchinmay/MiscPythonTools/blob/main/readme_img/colorGrad_ex1.png" width="600">
 - Interpolates the provided list of colors with a specified number of steps to create a discrete gradient.
 - Displays the discretized color gradient using Matplotlib.
 
