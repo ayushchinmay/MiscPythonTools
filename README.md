@@ -34,3 +34,6 @@
 ## 5. [Sin Square Wave](https://github.com/ayushchinmay/MiscPythonTools/blob/main/sinSquareWave.py)
 - <img src="https://github.com/ayushchinmay/MiscPythonTools/blob/main/readme_img/sineWaveSum.gif" width="480">
 - Visualization of how summation of sine-waves can be used to create a square-wave
+
+## 6. [Text to Speech Hourly Reminder](https://github.com/ayushchinmay/MiscPythonTools/blob/main/TTS/)
+- Uses Google Text to Speech module to create audio files for each hour, which is then used to provide hourly reminders.
