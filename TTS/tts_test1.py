@@ -35,8 +35,11 @@ def hourly_voice_reminder():
 		if currSec == 0:
 			sleeper = 60
 
-		if currHour12 != lastHour12:
+		if currMin == 0:
 			sleeper = 600
+
+		if currHour12 != lastHour12:
+			sleeper = 1800
 			lastHour12 = currHour12
 			mixer.music.load(fileName)
 			mixer.music.play()
