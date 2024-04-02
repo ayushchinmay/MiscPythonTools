@@ -25,9 +25,10 @@ def hourly_voice_reminder():
 
 	while True:
 		now = datetime.now()
-		currHour12 = int(now.strftime("%I"))
 		ampm = now.strftime("%p")
 		currSec = int(now.strftime("%S"))
+		currMin = int(now.strf("%M"))
+		currHour12 = int(now.strftime("%I"))
 		
 		# File name format: <hour><AM/PM>.mp3
 		fileName = f"/Audio/{currHour12}{ampm}.mp3"
