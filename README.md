@@ -37,3 +37,9 @@
 
 ## 6. [Text to Speech Hourly Reminder](https://github.com/ayushchinmay/MiscPythonTools/blob/main/TTS/)
 - Uses Google Text to Speech module to create audio files for each hour, which is then used to provide hourly reminders.
+
+## 7. [Automatic Differentiation using Dual Numbers](https://github.com/ayushchinmay/MiscPythonTools/blob/main/DualNumbers.py)
+- Implementation of a [Dual Number](https://en.wikipedia.org/wiki/Dual_number) class with supporting operations: ==, +, *, /, **, conjugate
+- Dual Numbers are an extension of the real numbers, similar to complex numbers, but instead of using i (where i^2=-1), a new element is introduced
+	- ε^2 = 0, ε != 0
+ - Dual numbers are widely used in automatic differentiation (AD). Evaluating a function f(x) at a dual number x+ϵ naturally computes both the function value and its derivative.
