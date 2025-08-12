@@ -43,3 +43,15 @@
 - Dual Numbers are an extension of the real numbers, similar to complex numbers, but instead of using i (where i^2=-1), a new element is introduced
 	- ε^2 = 0, ε != 0
  - Dual numbers are widely used in automatic differentiation (AD). Evaluating a function f(x) at a dual number x+ϵ naturally computes both the function value and its derivative.
+
+## 8. [Power Sum Combinations Visualizer](https://github.com/ayushchinmay/MiscPythonTools/blob/main/PowerSumVisualizer.py)
+- <img src="https://github.com/ayushchinmay/MiscPythonTools/blob/main/readme_img/powerSumVisualizer_ex1.png" width="600">
+- PyQt6 application for visualizing unique combinations of power sums with interactive plotting.
+- Computes all unique unordered pairs (a, b) such that a^power + b^power ≤ max_sum, for selectable powers (2, 3, 4, or 5).
+- Plots the count of such combinations for each possible sum value up to the chosen threshold.
+- Includes:
+  - Interactive UI for selecting power and maximum sum limit.
+  - Real-time progress updates.
+  - Export functionality for plots (PNG) and data (CSV).
+- Installation:
+  - `pip install PyQt6 matplotlib numpy`
